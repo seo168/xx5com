@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en-IN">
 <head>
@@ -134,9 +133,9 @@
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap:14px;
-      padding-top:14px;
-      padding-bottom:14px;
+      gap:12px;
+      padding-top:12px;
+      padding-bottom:12px;
     }
 
     .brand{
@@ -167,8 +166,9 @@
       display:flex;
       align-items:center;
       justify-content:flex-end;
-      gap:10px;
-      flex-wrap:wrap;
+      gap:8px;
+      flex-wrap:nowrap;
+      flex-shrink:0;
     }
 
     .btn{
@@ -601,31 +601,32 @@
 
     @media (max-width:768px){
       .container{
-        padding:18px;
+        padding:16px;
       }
 
       .nav{
-        align-items:flex-start;
+        align-items:center;
       }
 
       .brand .logo{
-        width:34px;
-        height:34px;
+        width:32px;
+        height:32px;
       }
 
       .brand span{
-        font-size:18px;
+        font-size:17px;
       }
 
       .nav-actions{
-        gap:8px;
+        gap:6px;
       }
 
       .nav-actions .btn{
-        padding:9px 12px;
+        padding:8px 12px;
         border-radius:12px;
-        font-size:13px;
-        min-height:40px;
+        font-size:12.5px;
+        min-height:38px;
+        white-space:nowrap;
       }
 
       .section{
@@ -747,15 +748,15 @@
 
     @media (max-width:420px){
       .container{
-        padding:15px;
+        padding:14px;
       }
 
       .nav{
-        gap:10px;
+        gap:8px;
       }
 
-      .nav-actions .btn.secondary-hide-mobile{
-        display:none;
+      .brand span{
+        font-size:16px;
       }
 
       h1{
@@ -872,9 +873,8 @@
       </a>
 
       <div class="nav-actions" aria-label="Page links">
-        <a class="btn secondary-hide-mobile" href="/">Home</a>
-        <a class="btn secondary-hide-mobile" href="/how-to-download/">Install Guide</a>
-        <a class="btn primary" href="https://d1811ku0vicgoo.cloudfront.net/apk/XX5.7amav.apk" rel="nofollow noopener noreferrer">Download</a>
+        <a class="btn" href="/">Home</a>
+        <a class="btn primary" href="https://d1811ku0vicgoo.cloudfront.net/apk/XX5.7amav.apk" rel="nofollow noopener noreferrer">Download APK</a>
       </div>
     </div>
   </header>
@@ -1144,4 +1144,3 @@
   </script>
 </body>
 </html>
-
