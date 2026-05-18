@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://xx5-india.com/</loc>
+    <priority>1.00</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://xx5-india.com/app-info/</loc>
+    <priority>0.90</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://xx5-india.com/blog/</loc>
+    <priority>0.85</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://xx5-india.com/alliance/</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://xx5-india.com/platforms/</loc>
+    <priority>0.75</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://xx5-india.com/agent-homepage/</loc>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+</urlset>
