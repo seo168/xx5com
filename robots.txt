@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xx5-india.com/sitemap.xml
