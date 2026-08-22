@@ -580,11 +580,6 @@
 
     .nav-link{border:0;background:transparent;color:inherit;font-weight:600;cursor:pointer;padding:8px 0}
     .nav-link:hover{color:var(--text)}
-    .contact-menu{position:relative}
-    .contact-dropdown{position:absolute;top:38px;right:0;min-width:160px;padding:8px;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border:1px solid rgba(218,220,224,.9);border-radius:14px;box-shadow:0 14px 34px rgba(32,33,36,.16);display:none;z-index:60}
-    .contact-dropdown.show{display:block}
-    .contact-dropdown a{display:block;padding:11px 12px;border-radius:10px;color:var(--text)}
-    .contact-dropdown a:hover{background:var(--surface-2);color:var(--green)}
 
     .partner-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
     .partner-card{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:17px;padding:16px;background:#fff;box-shadow:0 3px 10px rgba(32,33,36,.04);transition:.18s ease}
@@ -776,9 +771,6 @@
       .live-chat-fab{right:12px !important}
     }
 
-    @media(max-width:480px){
-      .nav a{display:none !important}
-      .header-btn{display:inline-flex !important}
       .header-visual-space{height:90px}
       .header-visual-copy strong{font-size:18px}
       .header-visual-copy span{
@@ -1101,6 +1093,117 @@
   display:block;
 }
 
+/* =========================================
+   MOBILE HEADER FIX
+========================================= */
+
+@media(max-width:620px){
+
+  .topbar{
+    height:auto !important;
+  }
+
+  .topbar-inner{
+    min-height:58px;
+    height:auto !important;
+
+    padding:9px 14px !important;
+
+    display:flex;
+    flex-wrap:wrap;
+
+    align-items:center;
+    justify-content:space-between;
+
+    gap:8px;
+  }
+
+  .brand{
+    flex:0 0 auto;
+    font-size:17px;
+  }
+
+  .brand span:last-child{
+    display:inline !important;
+  }
+
+  .nav{
+    width:100%;
+
+    order:2;
+
+    display:flex !important;
+    align-items:center;
+    justify-content:flex-start;
+
+    gap:6px !important;
+
+    overflow-x:auto;
+
+    white-space:nowrap;
+
+    padding:2px 0 3px;
+
+    scrollbar-width:none;
+
+    -webkit-overflow-scrolling:touch;
+  }
+
+  .nav::-webkit-scrollbar{
+    display:none;
+  }
+
+  .nav a{
+    display:inline-flex !important;
+
+    flex:0 0 auto;
+
+    align-items:center;
+    justify-content:center;
+
+    min-height:34px;
+
+    padding:7px 11px;
+
+    border-radius:999px;
+
+    border:1px solid #e5e7eb;
+
+    background:#f8f9fa;
+
+    color:#5f6368;
+
+    font-size:11px !important;
+    font-weight:700;
+  }
+
+  .nav a:hover{
+    color:#01875f;
+  }
+
+  .header-btn{
+    display:inline-flex !important;
+
+    flex:0 0 auto;
+
+    min-height:34px;
+
+    padding:7px 12px !important;
+
+    border:0;
+
+    border-radius:999px;
+
+    background:#01875f;
+
+    color:#fff;
+
+    font-size:11px !important;
+    font-weight:800;
+  }
+
+}    
+
   </style>
 </head>
 
@@ -1113,18 +1216,30 @@
       </a>
 
       <nav class="nav">
-  <a class="nav-link" href="/about/">About</a>
-  <a href="/partner/">Partner</a>
 
-  <div class="contact-menu">
-    <button class="nav-link" onclick="toggleContactMenu(event)">Contact Us ▾</button>
-    <div class="contact-dropdown" id="contactDropdown">
-      <a href="https://wa.me/000000000000" target="_blank" rel="noopener">WhatsApp</a>
-      <a href="https://66group.club" target="_blank" rel="noopener">Telegram</a>
-    </div>
-  </div>
+  <a href="/">
+    Home
+  </a>
 
-  <button class="header-btn" onclick="downloadApp()">Download APK</button>
+  <a href="/about/">
+    About
+  </a>
+
+  <a href="/partner/">
+    Partner
+  </a>
+
+  <a href="/#screenshots">
+    Preview
+  </a>
+
+  <button
+    class="header-btn"
+    onclick="downloadApp()"
+  >
+    Download APK
+  </button>
+
 </nav>
     </div>
   </header>
