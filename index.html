@@ -460,11 +460,6 @@
 
     .nav-link{border:0;background:transparent;color:inherit;font-weight:600;cursor:pointer;padding:8px 0}
     .nav-link:hover{color:var(--text)}
-    .contact-menu{position:relative}
-    .contact-dropdown{position:absolute;top:38px;right:0;min-width:160px;padding:8px;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border:1px solid rgba(218,220,224,.9);border-radius:14px;box-shadow:0 14px 34px rgba(32,33,36,.16);display:none;z-index:60}
-    .contact-dropdown.show{display:block}
-    .contact-dropdown a{display:block;padding:11px 12px;border-radius:10px;color:var(--text)}
-    .contact-dropdown a:hover{background:var(--surface-2);color:var(--green)}
     .partner-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
     .partner-card{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:17px;padding:16px;background:#fff;box-shadow:0 3px 10px rgba(32,33,36,.04);transition:.18s ease}
     .partner-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(32,33,36,.09)}
@@ -493,8 +488,12 @@
     .about-modal p{margin:0;color:#3c4043;font-size:15px;line-height:1.8}
     .modal-close{position:absolute;right:18px;top:16px;width:36px;height:36px;border:0;border-radius:50%;background:rgba(32,33,36,.08);cursor:pointer;font-size:20px}
     .modal-tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}
-    @media(max-width:760px){.partner-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-dropdown{right:-20px}.nav{gap:14px}}
-    @media(max-width:480px){.partner-grid{grid-template-columns:1fr}.nav{gap:10px;font-size:13px}.header-btn{display:none}}
+    @media(max-width:760px){.partner-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav{gap:14px}}
+    @media(max-width:480px){
+  .partner-grid{
+    grid-template-columns:1fr;
+  }
+}
 
 
     .partner-card{position:relative}
@@ -644,15 +643,6 @@
       .payment-grid{grid-template-columns:1fr}
       .data-card{grid-template-columns:1fr}
       .nav{gap:14px}
-      .contact-dropdown{right:-20px}
-    }
-
-    @media(max-width:480px){
-      .partner-grid{grid-template-columns:1fr}
-      .nav{gap:10px;font-size:13px}
-      .header-btn{display:none}
-      .brand span:last-child{display:none}
-      .about-modal{padding:23px;border-radius:20px}
     }
   
     /* ===== Locked update: horizontal partner slider ===== */
@@ -1524,21 +1514,10 @@
       document.body.style.overflow = "";
     }
 
-    function toggleContactMenu(event){
-      event.stopPropagation();
-      document.getElementById("contactDropdown").classList.toggle("show");
-    }
-
-    document.addEventListener("click", function(){
-      const menu = document.getElementById("contactDropdown");
-      if(menu) menu.classList.remove("show");
-    });
-
     document.addEventListener("keydown", function(event){
       if(event.key === "Escape"){
         document.getElementById("aboutModal").classList.remove("show");
         document.body.style.overflow = "";
-        const menu = document.getElementById("contactDropdown");
         if(menu) menu.classList.remove("show");
       }
     });
@@ -1621,7 +1600,6 @@
 
       button.addEventListener("click", function(event){
         if(moved){ event.preventDefault(); return; }
-        toggleContactMenu();
       });
     })();
 
