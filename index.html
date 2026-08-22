@@ -44,6 +44,7 @@
   "url": "https://xx5-india.com/",
   "image": "https://xx5-india.com/assets/xx5-logo.png?v=20260808",
   "description": "Download the latest XX5 APK and XX5 Game APK for Android with slots, live games and India-friendly payment methods.",
+  "inLanguage": "en-IN",
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -761,6 +762,7 @@
       .live-chat-fab{right:12px !important}
     }
 
+    @media(max-width:480px){
       .header-visual-space{height:90px}
       .header-visual-copy strong{font-size:18px}
       .header-visual-copy span{
@@ -1443,6 +1445,30 @@
   }
 
 }
+
+/* SEO/UX stabilization: prevent visual collisions and layout shifts. */
+.shot img{width:100%;height:auto;aspect-ratio:576/1280;object-fit:cover}
+.about-text a{text-decoration:underline;text-underline-offset:3px}
+
+@media(max-width:620px){
+  .hero-feature{padding:24px 16px 28px !important;min-height:auto !important}
+  .hero-feature::before{opacity:.16 !important;background-position:center !important}
+  .hero-feature .app-head{display:grid !important;grid-template-columns:72px minmax(0,1fr) !important;gap:14px !important;align-items:start !important}
+  .hero-feature .app-head>div{display:contents !important}
+  .hero-feature .app-icon{width:72px !important;height:72px !important;margin:0 !important}
+  .hero-feature .app-title{grid-column:2;font-size:24px !important;line-height:1.15 !important;margin:0 0 6px !important}
+  .hero-feature .developer{grid-column:2;font-size:12px !important;line-height:1.4 !important}
+  .hero-feature .short-desc{grid-column:1/-1;font-size:14px !important;line-height:1.55 !important;margin-top:12px !important}
+  .hero-feature .metrics{display:grid !important;grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:1px !important;background:rgba(255,255,255,.18);border-radius:14px;overflow:hidden}
+  .hero-feature .metric{width:auto !important;min-width:0 !important;padding:11px 8px !important;background:rgba(5,24,19,.72);border:0 !important;text-align:center}
+  .hero-feature .metric strong{font-size:15px !important}
+  .hero-feature .metric span{font-size:10px !important}
+  .hero-feature .actions{display:grid !important;grid-template-columns:1fr !important;gap:8px !important}
+  .hero-feature .install-btn,.hero-feature .share-btn{width:100% !important;min-height:48px !important}
+  .phone-wrap{display:none !important}
+  .partner-grid{scrollbar-width:none}
+  .partner-grid::-webkit-scrollbar{display:none}
+}
   </style>
 </head>
 
@@ -1502,22 +1528,22 @@
           </div>
         </div>
 
-        <div class="metrics" aria-label="App information">
+        <div class="metrics" aria-label="XX5 app information">
           <div class="metric">
-            <strong>4.8 ★</strong>
-            <span>25K+ players</span>
+            <strong>Android</strong>
+            <span>APK package</span>
           </div>
           <div class="metric">
-            <strong>500+</strong>
-            <span>Games</span>
+            <strong>Direct</strong>
+            <span>App download</span>
           </div>
           <div class="metric">
-            <strong>24/7</strong>
-            <span>Customer support</span>
+            <strong>India</strong>
+            <span>UPI information</span>
           </div>
           <div class="metric">
-            <strong>Fast</strong>
-            <span>Deposit & withdrawal</span>
+            <strong>18+</strong>
+            <span>Play responsibly</span>
           </div>
         </div>
 
@@ -1558,25 +1584,25 @@
       </div>
       <div class="partner-grid">
         <article class="partner-card" aria-label="XX6COM partner platform">
-          <div class="partner-logo"><img src="/assets/xx6-logo.png?v=20260808" alt="XX6"></div><div><b>XX6COM</b><span>Partner platform</span><a class="partner-download" href="https://d30vlgvvl0fj64.cloudfront.net/apk/XX6.8dobr.apk" data-platform="xx6com">Download</a></div>
+          <div class="partner-logo"><img src="/assets/xx6-logo.png?v=20260808" alt="XX6COM logo" width="56" height="56" loading="lazy"></div><div><b>XX6COM</b><span>Partner platform</span><a class="partner-download" href="https://d30vlgvvl0fj64.cloudfront.net/apk/XX6.8dobr.apk" data-platform="xx6com" rel="nofollow">Download</a></div>
         </article>
         <article class="partner-card" aria-label="XX7COM partner platform">
-          <div class="partner-logo"><img src="/assets/xx7-logo.png?v=20260808" alt="XX7"></div><div><b>XX7COM</b><span>Partner platform</span><a class="partner-download" href="https://d2jhwu6bwze8ki.cloudfront.net/apk/XX7.8xrlq.apk" data-platform="xx7com">Download</a></div>
+          <div class="partner-logo"><img src="/assets/xx7-logo.png?v=20260808" alt="XX7COM logo" width="56" height="56" loading="lazy"></div><div><b>XX7COM</b><span>Partner platform</span><a class="partner-download" href="https://d2jhwu6bwze8ki.cloudfront.net/apk/XX7.8xrlq.apk" data-platform="xx7com" rel="nofollow">Download</a></div>
         </article>
         <article class="partner-card" aria-label="YYGame partner platform">
-          <div class="partner-logo"><img src="/assets/yygame-logo.png?v=20260808" alt="YYG"></div><div><b>YYGame</b><span>Partner platform</span><a class="partner-download" href="https://dclaa7imbttae.cloudfront.net/apk/yy.tpnja.apk" data-platform="yygame">Download</a></div>
+          <div class="partner-logo"><img src="/assets/yygame-logo.png?v=20260808" alt="YYGame logo" width="56" height="56" loading="lazy"></div><div><b>YYGame</b><span>Partner platform</span><a class="partner-download" href="https://dclaa7imbttae.cloudfront.net/apk/yy.tpnja.apk" data-platform="yygame" rel="nofollow">Download</a></div>
         </article>
         <article class="partner-card" aria-label="66Game partner platform">
-          <div class="partner-logo"><img src="/assets/66game-logo.png?v=20260808" alt="66"></div><div><b>66Game</b><span>Partner platform</span><a class="partner-download" href="https://dvnm6cw04vasl.cloudfront.net/apk/66game.1qbxp.apk" data-platform="66game">Download</a></div>
+          <div class="partner-logo"><img src="/assets/66game-logo.png?v=20260808" alt="66Game logo" width="56" height="56" loading="lazy"></div><div><b>66Game</b><span>Partner platform</span><a class="partner-download" href="https://dvnm6cw04vasl.cloudfront.net/apk/66game.1qbxp.apk" data-platform="66game" rel="nofollow">Download</a></div>
         </article>
         <article class="partner-card" aria-label="XX5COM partner platform">
-          <div class="partner-logo"><img src="/assets/xx5-logo.png?v=20260808" alt="XX5"></div><div><b>XX5COM</b><span>Partner platform</span><a class="partner-download" href="https://d1811ku0vicgoo.cloudfront.net/apk/XX5.7amav.apk" data-platform="xx5com">Download</a></div>
+          <div class="partner-logo"><img src="/assets/xx5-logo.png?v=20260808" alt="XX5COM logo" width="56" height="56" loading="lazy"></div><div><b>XX5COM</b><span>Current platform</span><a class="partner-download" href="https://d1811ku0vicgoo.cloudfront.net/apk/XX5.7amav.apk" data-platform="xx5com" rel="nofollow">Download</a></div>
         </article>
         <article class="partner-card" aria-label="YY9COM partner platform">
-          <div class="partner-logo"><img src="/assets/yy9-logo.png?v=20260808" alt="YY9"></div><div><b>YY9COM</b><span>Partner platform</span><a class="partner-download" href="https://d2rfqhp7azz49k.cloudfront.net/apk/YY9.7onms.apk" data-platform="yy9com">Download</a></div>
+          <div class="partner-logo"><img src="/assets/yy9-logo.png?v=20260808" alt="YY9COM logo" width="56" height="56" loading="lazy"></div><div><b>YY9COM</b><span>Partner platform</span><a class="partner-download" href="https://d2rfqhp7azz49k.cloudfront.net/apk/YY9.7onms.apk" data-platform="yy9com" rel="nofollow">Download</a></div>
         </article>
         <article class="partner-card" aria-label="PE7COM partner platform">
-          <div class="partner-logo"><img src="/assets/pe7-logo.png?v=20260808" alt="PE7"></div><div><b>PE7COM</b><span>Partner platform</span><a class="partner-download" href="https://d2mlqx3kx3d7al.cloudfront.net/apk/PE7.tpcs.apk" data-platform="pe7com">Download</a></div>
+          <div class="partner-logo"><img src="/assets/pe7-logo.png?v=20260808" alt="PE7COM logo" width="56" height="56" loading="lazy"></div><div><b>PE7COM</b><span>Partner platform</span><a class="partner-download" href="https://d2mlqx3kx3d7al.cloudfront.net/apk/PE7.tpcs.apk" data-platform="pe7com" rel="nofollow">Download</a></div>
         </article>
       </div>
     </section>
@@ -1593,6 +1619,7 @@
       <img 
         src="/assets/w5w-screenshot-1.webp?v=20260808"
         alt="XX5 App Screenshot 1"
+        width="576" height="1280"
         loading="lazy">
     </article>
 
@@ -1600,6 +1627,7 @@
       <img 
         src="/assets/w5w-screenshot-2.webp?v=20260808"
         alt="XX5 App Screenshot 2"
+        width="576" height="1280"
         loading="lazy">
     </article>
 
@@ -1607,6 +1635,7 @@
       <img 
         src="/assets/w5w-screenshot-3.webp?v=20260808"
         alt="XX5 App Screenshot 3"
+        width="576" height="1280"
         loading="lazy">
     </article>
 
@@ -1614,6 +1643,7 @@
       <img 
         src="/assets/w5w-screenshot-4.webp?v=20260808"
         alt="XX5 App Screenshot 4"
+        width="576" height="1280"
         loading="lazy">
     </article>
 
@@ -1621,6 +1651,7 @@
       <img 
         src="/assets/w5w-screenshot-5.webp?v=20260808"
         alt="XX5 App Screenshot 5"
+        width="576" height="1280"
         loading="lazy">
     </article>
 
@@ -1655,6 +1686,21 @@
           <div class="info-item"><div class="info-icon">ⓘ</div><div><b>Support</b><span>24/7 English and Hindi assistance</span></div></div>
         </div>
       </div>
+    </section>
+
+    <section class="section" id="install-guide">
+      <div class="section-title"><h2>How to download and install XX5 APK</h2><span class="arrow">›</span></div>
+      <div class="data-card">
+        <div><b>1. Download the Android package</b><span>Use the Download App button on this page and wait for the APK file to finish downloading.</span></div>
+        <div><b>2. Review the file before installing</b><span>Confirm that the download came from the button on xx5-india.com. Do not install files received from unknown messages or unofficial mirrors.</span></div>
+        <div><b>3. Allow installation when prompted</b><span>Android may ask you to allow installs from your browser. Enable it only for the installation, then turn the permission off again.</span></div>
+        <div><b>4. Install and open the app</b><span>Open the downloaded APK, follow the Android installer, and contact support if the installation cannot be completed.</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="apk-safety">
+      <div class="section-title"><h2>XX5 APK safety information</h2><span class="arrow">›</span></div>
+      <p class="about-text">Android APK files are installed outside Google Play and should be handled carefully. Download only from the official button on this website, keep Android security scanning enabled, review requested permissions, and never share passwords, OTP codes, or payment PINs with another person. See the <a href="/apk-safety/" style="color:var(--blue);font-weight:700">complete APK safety guide</a>.</p>
     </section>
 
 
@@ -1706,9 +1752,10 @@
     <div class="footer-inner">
       <div>© 2026 XX5COM. Adults 18+ only. Play responsibly.</div>
       <div class="footer-links">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Support</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/responsible-gaming/">Responsible Gaming</a>
+        <a href="/support/">Support</a>
       </div>
     </div>
   </footer>
