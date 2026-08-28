@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "xx5-domain-redirects",
+  "main": "src/index.js",
+  "compatibility_date": "2026-08-28",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    { "pattern": "xx5official.in/*", "zone_name": "xx5official.in" },
+    { "pattern": "www.xx5official.in/*", "zone_name": "xx5official.in" },
+    { "pattern": "getxx5.in/*", "zone_name": "getxx5.in" },
+    { "pattern": "www.getxx5.in/*", "zone_name": "getxx5.in" },
+    { "pattern": "xx5download.in/*", "zone_name": "xx5download.in" },
+    { "pattern": "www.xx5download.in/*", "zone_name": "xx5download.in" },
+    { "pattern": "xx5play.co.in/*", "zone_name": "xx5play.co.in" },
+    { "pattern": "www.xx5play.co.in/*", "zone_name": "xx5play.co.in" },
+    { "pattern": "playxx5.in/*", "zone_name": "playxx5.in" },
+    { "pattern": "www.playxx5.in/*", "zone_name": "playxx5.in" }
+  ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  }
+}
