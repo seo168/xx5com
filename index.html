@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-IN">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -32,24 +32,18 @@
 
   <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "XX5 Game APK",
-  "alternateName": [
-    "XX5COM",
-    "XX5"
-  ],
-  "applicationCategory": "GameApplication",
-  "operatingSystem": "Android",
-  "url": "https://xx5-india.com/",
-  "image": "https://xx5-india.com/assets/xx5-logo.png?v=20260808",
-  "description": "Download the latest XX5 APK and XX5 Game APK for Android with slots, live games and India-friendly payment methods.",
-  "inLanguage": "en-IN",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "INR"
-  }
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"WebSite","@id":"https://xx5-india.com/#website","url":"https://xx5-india.com/","name":"XX5COM","alternateName":["XX5","XX5 Game"],"inLanguage":"en-IN"},
+    {"@type":"WebPage","@id":"https://xx5-india.com/#webpage","url":"https://xx5-india.com/","name":"XX5COM APK Download | XX5 Game APK for Android India","isPartOf":{"@id":"https://xx5-india.com/#website"},"about":{"@id":"https://xx5-india.com/#app"},"inLanguage":"en-IN"},
+    {"@type":"SoftwareApplication","@id":"https://xx5-india.com/#app","name":"XX5 Game APK","alternateName":["XX5COM","XX5"],"applicationCategory":"GameApplication","operatingSystem":"Android","url":"https://xx5-india.com/download/","image":"https://xx5-india.com/assets/xx5-logo.webp","description":"XX5 Game APK download and Android installation information for users in India.","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"}},
+    {"@type":"FAQPage","@id":"https://xx5-india.com/#faq","mainEntity":[
+      {"@type":"Question","name":"What is XX5 APK?","acceptedAnswer":{"@type":"Answer","text":"XX5 APK is the Android installation package for the XX5 Game app."}},
+      {"@type":"Question","name":"How do I download XX5 Game on Android?","acceptedAnswer":{"@type":"Answer","text":"Open the XX5 download page on xx5-india.com, download the APK, review the file source, and follow the Android installation prompts."}},
+      {"@type":"Question","name":"Which payment methods may be available on XX5?","acceptedAnswer":{"@type":"Answer","text":"Available channels may include UPI, UPI QR, IMPS, Paytm, and PhonePe. Current availability, limits, and processing times depend on the active provider and account status."}},
+      {"@type":"Question","name":"How can I install an XX5 update?","acceptedAnswer":{"@type":"Answer","text":"Download the current APK from the same official download page and install it over the existing Android app. Contact support before removing the current app if Android reports a package conflict."}}
+    ]}
+  ]
 }
   </script>
 
@@ -1491,6 +1485,18 @@
         About
       </a>
 
+      <a href="/download/">
+        Download
+      </a>
+
+      <a href="/install-guide/">
+        Install Guide
+      </a>
+
+      <a href="/payments/">
+        Payments
+      </a>
+
       <a href="/partner/">
         Partner
       </a>
@@ -1548,7 +1554,7 @@
         </div>
 
         <div class="actions">
-          <button class="install-btn" onclick="downloadApp()">Download App</button>
+          <a class="install-btn" href="/download/">Download XX5 APK</a>
           <button class="share-btn" onclick="sharePage()">⌁ Share</button>
         </div>
       </div>
@@ -1667,7 +1673,7 @@
       <div class="about-grid">
         <div>
           <div class="about-text">
-            XX5COM is a mobile-first India gaming platform designed for users searching for the latest XX5 APK and XX5 Game APK download. The XX5 app gives Android users quick access to slot games, live casino tables, crash games, card games, daily promotions, account support, and convenient India payment options. Users can download the XX5 APK directly from the official XX5COM page and install the newest Android package with a simple mobile-friendly process.
+            XX5COM is a mobile-first India gaming platform designed for users searching for the latest XX5 APK and XX5 Game APK download. The XX5 app gives Android users access to slot games, live casino tables, crash games, card games, promotions, account support, and India payment options. Use the dedicated <a href="/download/" style="color:var(--blue);font-weight:700">XX5 APK download page</a> to access the current Android package.
             <br><br>
             The platform supports popular payment methods including UPI, UPI QR, IMPS, Paytm, and PhonePe where available. XX5COM focuses on fast navigation, secure account access, responsive mobile performance, and clear download information for users looking for XX5 APK download, XX5 Game APK download, or the official XX5COM Android app.
           </div>
@@ -1691,10 +1697,10 @@
     <section class="section" id="install-guide">
       <div class="section-title"><h2>How to download and install XX5 APK</h2><span class="arrow">›</span></div>
       <div class="data-card">
-        <div><b>1. Download the Android package</b><span>Use the Download App button on this page and wait for the APK file to finish downloading.</span></div>
+        <div><b>1. Download the Android package</b><span>Open the <a href="/download/" style="color:var(--blue);font-weight:700">XX5 APK download page</a> and wait for the file to finish downloading.</span></div>
         <div><b>2. Review the file before installing</b><span>Confirm that the download came from the button on xx5-india.com. Do not install files received from unknown messages or unofficial mirrors.</span></div>
         <div><b>3. Allow installation when prompted</b><span>Android may ask you to allow installs from your browser. Enable it only for the installation, then turn the permission off again.</span></div>
-        <div><b>4. Install and open the app</b><span>Open the downloaded APK, follow the Android installer, and contact support if the installation cannot be completed.</span></div>
+        <div><b>4. Install and open the app</b><span>Open the downloaded APK and follow Android's installer. See the <a href="/install-guide/" style="color:var(--blue);font-weight:700">complete installation guide</a> if it cannot be completed.</span></div>
       </div>
     </section>
 
@@ -1706,7 +1712,7 @@
 
     <section class="section" id="payments">
       <div class="section-title"><h2>Deposit & withdrawal methods</h2><span class="arrow">›</span></div>
-      <p class="about-text">XX5COM supports popular India-friendly deposit and withdrawal methods. Availability, transaction limits, fees, and processing time depend on the active payment provider and verified account status.</p>
+      <p class="about-text">XX5COM may provide India-friendly deposit and withdrawal methods. Availability, transaction limits, fees, and processing time depend on the active payment provider and verified account status. Review the <a href="/payments/" style="color:var(--blue);font-weight:700">XX5 payment guide</a> before making a transaction.</p>
       <div class="payment-grid">
         <article class="payment-card"><div class="payment-logo">UPI</div><div><b>UPI</b><span>Pay through supported UPI apps and linked Indian bank accounts.</span></div></article>
         <article class="payment-card"><div class="payment-logo">QR</div><div><b>UPI QR</b><span>Scan the displayed QR code and complete payment from your preferred UPI app.</span></div></article>
@@ -1746,6 +1752,16 @@
         </div>
       </div>
     </section>
+
+    <section class="section" id="faq">
+      <div class="section-title"><h2>XX5 Game APK FAQ</h2><span class="arrow">›</span></div>
+      <div class="data-card">
+        <div><b>What is XX5 APK?</b><span>XX5 APK is the Android installation package for the XX5 Game app.</span></div>
+        <div><b>How do I download XX5 Game on Android?</b><span>Use the <a href="/download/" style="color:var(--blue);font-weight:700">XX5 download page</a>, review the file source, and follow the Android installation prompts.</span></div>
+        <div><b>Which payment methods may be available?</b><span>Channels may include UPI, UPI QR, IMPS, Paytm, and PhonePe. Availability and limits depend on the active provider.</span></div>
+        <div><b>How do I update XX5?</b><span>Download the current APK from the same official page and install it over the existing app. Read the <a href="/install-guide/" style="color:var(--blue);font-weight:700">update instructions</a> first.</span></div>
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -1756,6 +1772,8 @@
         <a href="/terms/">Terms</a>
         <a href="/responsible-gaming/">Responsible Gaming</a>
         <a href="/support/">Support</a>
+        <a href="/download/">Download</a>
+        <a href="/install-guide/">Install Guide</a>
       </div>
     </div>
   </footer>
